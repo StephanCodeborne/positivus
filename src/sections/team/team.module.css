@@ -1,0 +1,9 @@
+.content {
+  padding: 8.75rem 0 6.25rem;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.5rem;
+}

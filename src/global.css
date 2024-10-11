@@ -75,3 +75,12 @@ button {
   width: 90vw;
   max-width: 1240px;
 }
+
+.common-shadow {
+  border: 1px solid var(--brand-dark);
+  box-shadow: 0 5px 0 var(--brand-dark);
+}
+
+.common-border-radius {
+  border-radius: 45px;
+}

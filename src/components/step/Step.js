@@ -11,7 +11,7 @@ export default function Step({
     <div
       className={`${styles.step} ${
         stepNumber === activeStep ? styles.active : ""
-      }`}
+      } common-border-radius common-shadow`}
     >
       <div className={styles.top}>
         <div className={styles.titleContainer}>

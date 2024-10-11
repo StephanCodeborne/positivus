@@ -1,7 +1,4 @@
 .step {
-  border: 1px solid var(--brand-dark);
-  border-radius: 45px;
-  box-shadow: 0 5px 0 var(--brand-dark);
   padding: 2.563rem 3.75rem;
 }
 

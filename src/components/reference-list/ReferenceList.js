@@ -2,7 +2,7 @@ import styles from "./reference-list.module.css";
 
 export default function ReferenceList({ className, list }) {
   return (
-    <ul className={`${styles.list} ${className}`}>
+    <ul className={`${styles.list} ${className} common-border-radius`}>
       {list.map((ref) => (
         <Reference key={ref.id} href={ref.href}>
           {ref.description}

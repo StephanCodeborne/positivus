@@ -5,9 +5,6 @@
   justify-content: space-between;
 
   padding: 3.125rem;
-  border: 1px solid var(--brand-dark);
-  border-radius: 45px;
-  box-shadow: 0 5px 0 var(--brand-dark);
   transition: all 0.3s cubic-bezier(0.29, -0.68, 0.64, 1.53);
 }
 

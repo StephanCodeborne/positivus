@@ -12,7 +12,7 @@ export default function Service({
     <div
       className={`${className} ${styles.service} ${
         bgColor === "var(--brand-dark)" ? styles.dark : ""
-      }`}
+      } common-shadow common-border-radius`}
       style={{ backgroundColor: bgColor }}
     >
       <div className={styles.text}>
