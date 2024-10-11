@@ -1,10 +1,11 @@
-import CaseStudies from "./sections/case-studies/CaseStudies";
-import ContactOffer from "./sections/contact-offer/ContactOffer";
-import Hero from "./sections/hero/Hero";
 import NavBar from "./sections/navbar/NavBar";
+import Hero from "./sections/hero/Hero";
 import Services from "./sections/services/Srevices";
-import Team from "./sections/team/Team";
+import ContactOffer from "./sections/contact-offer/ContactOffer";
+import CaseStudies from "./sections/case-studies/CaseStudies";
 import WorkingProcess from "./sections/working-process/WorkingProcess";
+import Team from "./sections/team/Team";
+import Testimonials from "./sections/testimonials/Testimonials";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <CaseStudies />
       <WorkingProcess />
       <Team />
+      <Testimonials />
     </>
   );
 }

@@ -3,10 +3,10 @@ import styles from "./members.module.css";
 export default function Members({ members }) {
   return (
     <ul className={styles.members}>
-      {members.map(({ fullName, position, linkedIn, bio, photo }) => (
+      {members.map(({ fullName, ocupation, linkedIn, bio, photo }) => (
         <MemberCard
           name={fullName}
-          position={position}
+          ocupation={ocupation}
           bio={bio}
           photo={photo}
           linkedIn={linkedIn}
@@ -16,7 +16,7 @@ export default function Members({ members }) {
   );
 }
 
-function MemberCard({ name, position, bio, linkedIn, photo }) {
+function MemberCard({ name, ocupation, bio, linkedIn, photo }) {
   return (
     <li className={`${styles.card} common-shadow common-border-radius`}>
       <div className={styles.memberInfo}>
@@ -29,7 +29,7 @@ function MemberCard({ name, position, bio, linkedIn, photo }) {
         </div>
         <div className={styles.text}>
           <h4>{name}</h4>
-          <p className={styles.position}>{position}</p>
+          <p className={styles.ocupation}>{ocupation}</p>
         </div>
 
         <a className={styles.linkedIn} href={linkedIn}>
