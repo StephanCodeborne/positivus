@@ -1,0 +1,89 @@
+.slider {
+  background-color: var(--brand-dark);
+  padding: 5.25rem 0 4.25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 7.75rem;
+  overflow: hidden;
+
+  color: var(--text-color-light);
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 35.25rem;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 1.188rem;
+}
+
+.dot {
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.dot:hover {
+  transform: translateY(-7%) scale(1.08);
+}
+
+.dot.active:hover {
+  transform: none;
+}
+
+.dot:active {
+  transform: none;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+.arrow:active {
+  transform: none;
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+}
+
+.slides {
+  display: flex;
+  align-items: center;
+  gap: 3.125rem;
+  max-width: 35.25rem;
+}
+
+.card {
+  min-width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.review {
+  padding: 3rem 3.25rem 5rem;
+  border: 1px solid var(--brand-green);
+  box-shadow: 0 5px 0 var(--brand-green);
+}
+
+.reviewer {
+  margin-top: 1.25rem;
+}
+
+.reviewer h4 {
+  color: var(--brand-green);
+}

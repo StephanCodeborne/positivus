@@ -1,0 +1,36 @@
+.navContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.75rem 0 5.375rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.25rem;
+  line-height: 140%;
+}
+
+.link {
+  padding: 0.8rem 1.25rem;
+  border-radius: 1rem;
+  transition: all 0.1s ease;
+}
+
+.link:hover {
+  background-color: var(--brand-green);
+  outline: 1px solid var(--brand-dark);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 0 var(--brand-dark);
+}
+
+.link:active {
+  transform: none;
+  box-shadow: none;
+}
+
+.button {
+  margin-left: 1.25rem;
+}

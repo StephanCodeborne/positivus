@@ -1,19 +1,33 @@
-/* VARIABLES */
+/** VARIABLES */
 :root {
-  --text-black: #000;
-  --text-white: #fff;
-  --secondary-text-color: ;
+  --text-color: #000;
+  --text-color-light: #fff;
 
   --brand-green: #b9ff66;
-  --brand-black: #191a23;
+  --brand-dark: #191a23;
 }
 
-/* TYPOGRAPHY */
+/** TYPOGRAPHY */
 h1,
 h2,
 h3,
 h4 {
   font-weight: 500;
+  color: var(--text-color);
+  width: fit-content;
+}
+
+.heading-bg {
+  padding: 0 0.438rem;
+  border-radius: 7px;
+}
+
+.heading-bg.brand-green {
+  background-color: var(--brand-green);
+}
+
+.heading-bg.white {
+  background-color: #fff;
 }
 
 h1 {
@@ -25,7 +39,48 @@ h2 {
 }
 
 h3 {
+  font-size: 1.875rem;
 }
 
 h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/** GLOBAL CLASSES AND STYLES */
+.section-content-container {
+  display: flex;
+  justify-content: center;
+  scroll-margin-top: 0;
+}
+
+.section-content {
+  width: 90vw;
+  max-width: 1240px;
+}
+
+.common-shadow {
+  border: 1px solid var(--brand-dark);
+  box-shadow: 0 5px 0 var(--brand-dark);
+}
+
+.common-border-radius {
+  border-radius: 45px;
 }

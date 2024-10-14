@@ -1,3 +1,27 @@
+import NavBar from "./sections/navbar/NavBar";
+import Hero from "./sections/hero/Hero";
+import Services from "./sections/services/Srevices";
+import ContactOffer from "./sections/contact-offer/ContactOffer";
+import CaseStudies from "./sections/case-studies/CaseStudies";
+import WorkingProcess from "./sections/working-process/WorkingProcess";
+import Team from "./sections/team/Team";
+import Testimonials from "./sections/testimonials/Testimonials";
+import ContactUs from "./sections/contact-us/ContactUs";
+import Footer from "./sections/footer/Footer";
+
 export default function App() {
-  return;
+  return (
+    <>
+      <NavBar />
+      <Hero />
+      <Services />
+      <ContactOffer />
+      <CaseStudies />
+      <WorkingProcess />
+      <Team />
+      <Testimonials />
+      <ContactUs />
+      <Footer />
+    </>
+  );
 }

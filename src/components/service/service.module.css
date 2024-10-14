@@ -1,0 +1,47 @@
+.service {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 3.125rem;
+  transition: all 0.3s cubic-bezier(0.29, -0.68, 0.64, 1.53);
+}
+
+.service.dark {
+  box-shadow: 0 5px 0 var(--brand-green), 0 6px 0 var(--brand-dark);
+}
+
+.service:hover {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 5.813rem;
+}
+
+.serviceLink {
+  align-items: center;
+  font-size: 20px;
+  line-height: 140%;
+  gap: 15px;
+}
+
+.dark {
+  color: var(--text-color-light);
+}
+
+.serviceLink .arrow {
+  transition: transform 0.3s cubic-bezier(0.29, -0.68, 0.64, 1.53);
+}
+
+.serviceLink img {
+  display: block;
+}
+
+.serviceLink:hover .arrow {
+  transform: rotate(60deg);
+}

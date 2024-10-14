@@ -1,0 +1,72 @@
+.flexColumn {
+  flex-direction: column;
+  align-items: center;
+  gap: 4.375rem;
+}
+
+.heroContent {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.heroContent p {
+  font-size: 1.25rem;
+  line-height: 140%;
+  max-width: 498px;
+}
+
+.left {
+  max-width: 33.188rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.188rem;
+  align-items: start;
+}
+
+.image {
+  width: 37.529rem;
+  height: 32.188rem;
+  object-fit: cover;
+}
+
+.autoScroll {
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  max-width: 1240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.autoScroll:hover .sponsors {
+  animation-play-state: paused;
+}
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  animation-name: auto-scroll;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.sponsors.absolute {
+  position: absolute;
+  left: calc(100% + 5.994rem);
+
+  animation-name: auto-scroll;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes auto-scroll {
+  100% {
+    transform: translateX(calc(-100% - 5.994rem));
+  }
+}

@@ -1,0 +1,11 @@
+.servicesContent {
+  padding: 8.75rem 0 6.25rem;
+}
+
+.services {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}

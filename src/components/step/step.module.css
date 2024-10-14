@@ -1,0 +1,58 @@
+.step {
+  padding: 2.563rem 3.75rem;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.563rem;
+}
+
+.number {
+  font-size: 3.75rem;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+.toggle {
+  width: 3.625rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid var(--brand-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle img {
+  display: block;
+  object-fit: cover;
+}
+
+.bot {
+  border-top: 1px solid var(--text-color);
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.2s ease, opacity 0.1s ease;
+}
+
+.active {
+  background-color: var(--brand-green);
+}
+
+.active .bot {
+  height: auto;
+  opacity: 1;
+  padding-top: 1.875rem;
+  margin-top: 1.875rem;
+}

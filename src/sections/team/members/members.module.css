@@ -1,0 +1,57 @@
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.card {
+  padding: 2.5rem 2.188rem;
+  transition: all 0.2s ease;
+  width: 24.16rem;
+}
+
+.card:hover {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+
+.memberInfo {
+  display: flex;
+  align-items: end;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.photoContainer {
+  position: relative;
+}
+
+.photo {
+  clip-path: path(
+    "M83.8068 48.9117C116.649 86.3213 86.3213 116.649 48.9117 83.8068C11.5021 116.649 -18.8258 86.3213 14.0166 48.9117C-18.8258 11.5021 11.5021 -18.8258 48.9117 14.0166C86.3213 -18.8258 116.649 11.5021 83.8068 48.9117Z"
+  );
+  width: 6.114rem;
+  aspect-ratio: 1;
+  background-color: var(--brand-green);
+}
+
+.photo.absolute {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--brand-dark);
+}
+
+.linkedIn {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.bio {
+  padding: 1.75rem 0 0;
+  border-top: 1px solid var(--text-color);
+  margin-top: 1.75rem;
+}
