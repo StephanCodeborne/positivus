@@ -2,14 +2,16 @@
   font-size: 20px;
   line-height: 140%;
   border-radius: 14px;
-  border: none;
-  outline: 1px solid var(--brand-dark);
+  border: 1px solid var(--brand-dark);
   font-family: inherit;
   transition: all 0.1s ease;
 }
 
 .button a {
   padding: 20px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .filled {

@@ -1,0 +1,108 @@
+.content {
+  border-radius: 45px 45px 0 0;
+  background-color: var(--brand-dark);
+  padding: 3.438rem 3.75rem 3.125rem;
+  color: var(--text-color-light);
+  font-size: 1.125rem;
+}
+
+.footerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.links li:hover {
+  text-decoration: underline;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.main {
+  padding: 4.125rem 0 3.125rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text-color-light);
+}
+
+.contactUs {
+  max-width: 332px;
+}
+
+.contacts {
+  margin-top: 1.688rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contacts li {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+.subscribtion {
+  border-radius: 14px;
+  background-color: #292a32;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2.5rem;
+}
+
+.email {
+  font-size: 1.125rem;
+  font-family: inherit;
+  padding: 1.375rem 2.188rem;
+  border-radius: 14px;
+  background-color: transparent;
+  border: 1px solid var(--text-color-light);
+  color: var(--text-color-light);
+}
+
+.email:focus {
+  outline: none;
+}
+
+.email::placeholder {
+  color: var(--text-color-light);
+}
+
+.subscribe {
+  border-color: var(--text-color-light);
+}
+
+.subscribe:hover {
+  background-color: var(--brand-dark);
+  color: inherit;
+  box-shadow: 0 5px 0 var(--text-color-light);
+}
+
+.subscribe:active {
+  box-shadow: none;
+}
+
+.initials {
+  margin-top: 3.125rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.initials a {
+  text-decoration: underline;
+}

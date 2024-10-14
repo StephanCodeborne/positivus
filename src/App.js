@@ -6,6 +6,8 @@ import CaseStudies from "./sections/case-studies/CaseStudies";
 import WorkingProcess from "./sections/working-process/WorkingProcess";
 import Team from "./sections/team/Team";
 import Testimonials from "./sections/testimonials/Testimonials";
+import ContactUs from "./sections/contact-us/ContactUs";
+import Footer from "./sections/footer/Footer";
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
       <WorkingProcess />
       <Team />
       <Testimonials />
+      <ContactUs />
+      <Footer />
     </>
   );
 }

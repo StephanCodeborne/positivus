@@ -7,7 +7,7 @@ export default function NavBar() {
     <nav id="navbar" className="section-content-container">
       <SectionContent className={styles.navContent}>
         <a href="/">
-          <img src="images/logo-dark.svg" alt="logo" />
+          <img src="images/logo-dark.svg" alt="logo" className={styles.logo} />
         </a>
 
         <ul className={styles.links}>

@@ -1,0 +1,115 @@
+.content {
+  padding: 8.75rem 0;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.75rem 6.25rem 5rem;
+}
+
+.container img {
+  position: absolute;
+  right: 0;
+  transform: translateX(47%);
+  top: 3.75rem;
+  display: block;
+  height: 40.5rem;
+}
+
+.container form {
+  width: 100%;
+  max-width: 556px;
+}
+
+.radios {
+  display: flex;
+  gap: 2.188rem;
+  align-items: center;
+}
+
+.radio {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.caption {
+  cursor: pointer;
+}
+
+button[role="radio"] {
+  width: 28px;
+  aspect-ratio: 1;
+  border: 1px solid var(--text-color);
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.circle {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--brand-green);
+}
+
+.fields {
+  margin-top: 2.5rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 1.563rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.313rem;
+}
+
+.title {
+  font-size: 1rem;
+  line-height: 175%;
+  cursor: pointer;
+}
+
+.field input,
+.field textarea {
+  padding: 18px 1.875rem;
+  width: 100%;
+  font-size: 1.125rem;
+  font-family: inherit;
+  border: 1px solid var(--text-color);
+  border-radius: 14px;
+  color: inherit;
+  transition: all 0.1s ease;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #898989;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 0 var(--text-color);
+  background-color: var(--brand-green);
+}
+
+.field textarea {
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  height: 11.875rem;
+}
+
+.send {
+  width: 100%;
+  margin-top: 2.5rem;
+}

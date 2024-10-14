@@ -14,6 +14,7 @@ export default function Button({
         isFilled ? styles.filled : ""
       }`}
       type={type}
+      onClick={onClick}
     >
       <a href={href}>{children}</a>
     </button>
