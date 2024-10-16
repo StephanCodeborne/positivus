@@ -23,7 +23,7 @@ export default function Sponsors() {
           <img src="images/zoom.svg" alt="Zoom" />
         </a>
       </div>
-      <div className={`${styles.sponsors} ${styles.absolute}`}>
+      <div className={styles.sponsors}>
         <a href="#">
           <img src="images/amazon.svg" alt="amazon" />
         </a>

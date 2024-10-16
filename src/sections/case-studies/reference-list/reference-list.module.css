@@ -45,3 +45,33 @@
 .link:hover .arrow {
   transform: rotate(60deg);
 }
+
+@media (max-width: 940px) {
+  .list {
+    padding: 4.375rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 95%;
+
+    li {
+      padding-bottom: 3rem;
+      width: fit-content;
+      border-left: none;
+      border-bottom: 1px solid var(--text-color-light);
+
+      &:first-child {
+        border-bottom: 1px solid var(--text-color-light);
+      }
+
+      &:last-child {
+        border: none;
+        padding: 0;
+      }
+
+      .refContainer {
+        max-width: 40rem;
+      }
+    }
+  }
+}

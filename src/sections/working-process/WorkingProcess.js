@@ -1,7 +1,7 @@
 import { useState } from "react";
 import IntroText from "../../components/intro-text/IntroText";
 import SectionContent from "../../components/section-content/SectionContent";
-import Step from "../../components/step/Step";
+import Step from "./step/Step";
 import styles from "./working-process.module.css";
 
 export default function WorkingProcess() {
@@ -16,7 +16,7 @@ export default function WorkingProcess() {
       <SectionContent>
         <IntroText
           sectionTitle={"Our Working Process"}
-          descriptionMaxWidth="18.25rem"
+          descriptionMaxWidth="25.25rem"
         >
           Step-by-Step Guide to Achieving Your Business Goals
         </IntroText>

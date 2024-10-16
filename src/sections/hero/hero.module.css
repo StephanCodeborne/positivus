@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-.heroContent p {
+.left p {
   font-size: 1.25rem;
   line-height: 140%;
   max-width: 498px;
@@ -26,13 +26,17 @@
 
 .image {
   width: 37.529rem;
-  height: 32.188rem;
   object-fit: cover;
+}
+
+.left .image {
+  display: none;
 }
 
 .autoScroll {
   display: flex;
   align-items: center;
+  gap: 5.994rem;
   width: 90vw;
   max-width: 1240px;
   overflow: hidden;
@@ -44,20 +48,10 @@
 }
 
 .sponsors {
+  white-space: nowrap;
   display: flex;
   align-items: center;
-  width: 100%;
-  justify-content: space-between;
-
-  animation-name: auto-scroll;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-.sponsors.absolute {
-  position: absolute;
-  left: calc(100% + 5.994rem);
+  gap: 5.994rem;
 
   animation-name: auto-scroll;
   animation-duration: 30s;
@@ -68,5 +62,75 @@
 @keyframes auto-scroll {
   100% {
     transform: translateX(calc(-100% - 5.994rem));
+  }
+}
+
+@media (max-width: 1070px) {
+  .heroContent p {
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  .image {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 948px) {
+  .heroContent {
+    align-items: center;
+  }
+  .image {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .right {
+    display: none;
+  }
+
+  .heroContent {
+    justify-content: center;
+  }
+
+  .left {
+    max-width: 41rem;
+    text-align: center;
+    align-items: center;
+
+    p {
+      max-width: none;
+    }
+  }
+
+  .flexColumn {
+    gap: 7rem;
+  }
+
+  .sponsors {
+    min-width: 100%;
+    justify-content: space-between;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    animation: none;
+    justify-content: center;
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .heroContent {
+    h1 {
+      font-size: 3.6rem;
+    }
+  }
+  .left .image {
+    display: block;
+    width: 100%;
   }
 }

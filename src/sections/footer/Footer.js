@@ -80,6 +80,18 @@ export default function Footer() {
           </form>
         </div>
 
+        <ul className={`${styles.socialMedia} ${styles.mob}`}>
+          <a href="#">
+            <img src="icons/white-dark-linkedin.svg" alt="linkedin" />
+          </a>
+          <a href="#">
+            <img src="icons/white-dark-facebook.svg" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="icons/white-dark-twitter.svg" alt="twitter" />
+          </a>
+        </ul>
+
         <div className={styles.initials}>
           <p>© 2023 Positivus. All Rights Reserved.</p>
           <a href="#">

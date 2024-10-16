@@ -1,6 +1,6 @@
 import IntroText from "../../components/intro-text/IntroText";
 import SectionContent from "../../components/section-content/SectionContent";
-import Service from "../../components/service/Service";
+import Service from "./service/Service";
 import styles from "./services.module.css";
 
 export default function Services() {

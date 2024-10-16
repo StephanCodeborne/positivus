@@ -7,7 +7,8 @@
 .card {
   padding: 2.5rem 2.188rem;
   transition: all 0.2s ease;
-  width: 24.16rem;
+  flex: 1;
+  min-width: 24.16rem;
 }
 
 .card:hover {
@@ -30,7 +31,7 @@
   clip-path: path(
     "M83.8068 48.9117C116.649 86.3213 86.3213 116.649 48.9117 83.8068C11.5021 116.649 -18.8258 86.3213 14.0166 48.9117C-18.8258 11.5021 11.5021 -18.8258 48.9117 14.0166C86.3213 -18.8258 116.649 11.5021 83.8068 48.9117Z"
   );
-  width: 6.114rem;
+  min-width: 97.87px;
   aspect-ratio: 1;
   background-color: var(--brand-green);
 }

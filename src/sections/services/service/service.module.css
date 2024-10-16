@@ -1,11 +1,14 @@
 .service {
   flex: 1;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
   padding: 3.125rem;
   transition: all 0.3s cubic-bezier(0.29, -0.68, 0.64, 1.53);
+}
+
+.service h3 {
+  white-space: nowrap;
 }
 
 .service.dark {
@@ -28,6 +31,7 @@
   font-size: 20px;
   line-height: 140%;
   gap: 15px;
+  white-space: nowrap;
 }
 
 .dark {
@@ -44,4 +48,51 @@
 
 .serviceLink:hover .arrow {
   transform: rotate(60deg);
+}
+
+.illustration {
+  width: 13.125rem;
+}
+
+@media (max-width: 988px) {
+  .illustration {
+    display: none;
+  }
+}
+
+@media (max-width: 919px) {
+  .service {
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    .illustration {
+      display: block;
+      width: 20rem;
+    }
+  }
+}
+
+@media (max-width: 634px) {
+  .service {
+    min-width: 100%;
+    position: relative;
+
+    .illustration {
+      position: absolute;
+      width: 30%;
+      right: 3.125rem;
+      bottom: 3.125rem;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .service {
+    min-width: fit-content;
+    width: 100%;
+    .illustration {
+      display: none;
+    }
+  }
 }

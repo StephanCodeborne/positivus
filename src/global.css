@@ -84,3 +84,37 @@ button {
 .common-border-radius {
   border-radius: 45px;
 }
+
+@media (max-width: 1228px) {
+  html {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1070px) {
+  html {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 1.45rem;
+  }
+
+  h4 {
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 490px) {
+  html {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}

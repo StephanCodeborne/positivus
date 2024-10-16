@@ -39,7 +39,11 @@ export default function Service({
         </a>
       </div>
 
-      <img src={imagePath} alt="service illustration" />
+      <img
+        className={styles.illustration}
+        src={imagePath}
+        alt="service illustration"
+      />
     </div>
   );
 }
