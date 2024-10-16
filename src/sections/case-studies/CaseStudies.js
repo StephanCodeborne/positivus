@@ -1,6 +1,6 @@
 import { useState } from "react";
 import IntroText from "../../components/intro-text/IntroText";
-import ReferenceList from "../../components/reference-list/ReferenceList";
+import ReferenceList from "./reference-list/ReferenceList";
 import SectionContent from "../../components/section-content/SectionContent";
 import styles from "./case-studies.module.css";
 

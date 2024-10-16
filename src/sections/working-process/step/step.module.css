@@ -32,7 +32,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
+
 .toggle img {
   display: block;
   object-fit: cover;
@@ -55,4 +57,37 @@
   opacity: 1;
   padding-top: 1.875rem;
   margin-top: 1.875rem;
+}
+
+@media (max-width: 510px) {
+  .step {
+    padding: 2rem;
+
+    .number {
+      font-size: 3rem;
+    }
+
+    .title {
+      max-width: 80%;
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .step .title {
+    font-size: 1.5rem;
+  }
+
+  .number {
+    font-size: 1.6rem;
+  }
+
+  .toggle {
+    width: 3rem;
+
+    img {
+      width: 1.7rem;
+    }
+  }
 }

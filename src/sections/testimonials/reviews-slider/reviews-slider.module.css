@@ -87,3 +87,10 @@
 .reviewer h4 {
   color: var(--brand-green);
 }
+
+@media (max-width: 570px) {
+  .slides {
+    max-width: none;
+    width: 90%;
+  }
+}

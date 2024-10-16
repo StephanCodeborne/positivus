@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .links {
@@ -31,11 +32,16 @@
 .main {
   padding: 4.125rem 0 3.125rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--text-color-light);
+}
+
+.socialMedia.mob {
+  display: none;
 }
 
 .contactUs {
+  flex: 1;
   max-width: 332px;
 }
 
@@ -56,18 +62,22 @@
 }
 
 .subscribtion {
+  flex: 1;
+  max-width: 634px;
   border-radius: 14px;
   background-color: #292a32;
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  padding: 2.5rem;
+  padding: 3.625rem 2.5rem;
 }
 
 .email {
-  font-size: 1.125rem;
+  width: 100%;
+  max-width: 285px;
+  font-size: 18px;
   font-family: inherit;
-  padding: 1.375rem 2.188rem;
+  padding: 22px 35px;
   border-radius: 14px;
   background-color: transparent;
   border: 1px solid var(--text-color-light);
@@ -80,9 +90,11 @@
 
 .email::placeholder {
   color: var(--text-color-light);
+  opacity: 0.4;
 }
 
 .subscribe {
+  white-space: nowrap;
   border-color: var(--text-color-light);
 }
 
@@ -97,7 +109,8 @@
 }
 
 .initials {
-  margin-top: 3.125rem;
+  border-top: 1px solid var(--text-color-light);
+  padding-top: 3.125rem;
   display: flex;
   align-items: center;
   gap: 2.5rem;
@@ -105,4 +118,92 @@
 
 .initials a {
   text-decoration: underline;
+}
+
+@media (max-width: 1106px) {
+  .subscribtion {
+    flex-direction: column;
+    max-width: 50%;
+
+    .email {
+      max-width: none;
+      text-align: center;
+    }
+
+    .subscribe {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .footerNav {
+    .socialMedia {
+      display: none;
+    }
+
+    .links {
+      font-size: 1.3rem;
+    }
+  }
+
+  .socialMedia.mob {
+    display: flex;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .footerNav {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .main {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    .contactUs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        font-size: 1.75rem;
+      }
+
+      .contacts {
+        li {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          a {
+            color: var(--brand-green);
+          }
+        }
+      }
+    }
+
+    .subscribtion {
+      max-width: none;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .links {
+    flex-direction: column;
+  }
+
+  .socialMedia {
+    justify-content: center;
+  }
+
+  .initials {
+    flex-direction: column;
+  }
 }

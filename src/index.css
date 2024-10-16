@@ -11,7 +11,9 @@ html {
 }
 
 body {
+  width: 100vw;
   font-family: "Space Grotesk";
   background-color: #f3f3f3;
   color: var(--text-color);
+  overflow-x: hidden;
 }

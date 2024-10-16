@@ -7,7 +7,7 @@ export default function ContactUs() {
   return (
     <section id="contact-us" className="section-content-container">
       <SectionContent className={styles.content}>
-        <IntroText sectionTitle="Contact Us" descriptionMaxWidth="20.188rem">
+        <IntroText sectionTitle="Contact Us" descriptionMaxWidth="25.188rem">
           Connect with Us: Let's Discuss Your Digital Marketing Needs
         </IntroText>
 

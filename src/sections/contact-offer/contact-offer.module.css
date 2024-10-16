@@ -6,7 +6,7 @@
 }
 
 .left {
-  max-width: 500px;
+  max-width: 35.714rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -15,6 +15,25 @@
 
 .right img {
   width: 30.875rem;
-  height: 24.625rem;
   object-fit: cover;
+}
+
+@media (max-width: 870px) {
+  .right {
+    display: none;
+  }
+
+  .content {
+    padding: 3.5rem 0;
+    justify-content: center;
+    text-align: center;
+
+    .left {
+      align-items: center;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
 }

@@ -81,7 +81,7 @@ button[role="radio"] {
 .field textarea {
   padding: 18px 1.875rem;
   width: 100%;
-  font-size: 1.125rem;
+  font-size: 18px;
   font-family: inherit;
   border: 1px solid var(--text-color);
   border-radius: 14px;
@@ -112,4 +112,15 @@ button[role="radio"] {
 .send {
   width: 100%;
   margin-top: 2.5rem;
+}
+
+@media (max-width: 1100px) {
+  .container img {
+    display: none;
+  }
+
+  .container {
+    justify-content: center;
+    padding: 0;
+  }
 }

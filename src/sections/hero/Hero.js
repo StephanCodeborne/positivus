@@ -12,6 +12,11 @@ export default function Hero() {
       <SectionContent className={styles.heroContent}>
         <div className={styles.left}>
           <h1>Navigating the digital landscape for success</h1>
+          <img
+            className={styles.image}
+            src="images/hero-image.svg"
+            alt="illustration"
+          />
           <p>
             Our digital marketing agency helps businesses grow and succeed
             online through a range of services including SEO, PPC, social media
@@ -20,7 +25,7 @@ export default function Hero() {
           <Button isFilled={true}>Book a consultation</Button>
         </div>
 
-        <div className="right">
+        <div className={styles.right}>
           <img
             className={styles.image}
             src="images/hero-image.svg"
