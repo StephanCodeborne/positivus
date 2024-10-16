@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/positivus/static/css/main.4bf31119.css",
+    "main.js": "/positivus/static/js/main.ea1605f4.js",
+    "index.html": "/positivus/index.html",
+    "main.4bf31119.css.map": "/positivus/static/css/main.4bf31119.css.map",
+    "main.ea1605f4.js.map": "/positivus/static/js/main.ea1605f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bf31119.css",
+    "static/js/main.ea1605f4.js"
+  ]
+}
